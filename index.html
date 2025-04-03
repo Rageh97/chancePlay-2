@@ -31,6 +31,8 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="style.css" />
@@ -143,7 +145,8 @@
         class="flex flex-col  sm:flex-row min-h-screen md:px-20 px-4 space-y-4 md:space-y-0 md:space-x-6"
       >
         <!-- القسم الأيمن (الصورة) -->
-        <div class="w-full md:w-1/3 bg-[#0d0529] md:sticky md:top-0 md:h-screen flex justify-center items-start">
+        <div data-aos="fade-up"
+        data-aos-duration="2000" class="w-full md:w-1/3 bg-[#0d0529] md:sticky md:top-0 md:h-screen flex justify-center items-start">
           <img
             src="/images/YouTube video editors.jpeg"
             alt="صورة الحملة"
@@ -155,7 +158,8 @@
         
 
         <!-- القسم الأيسر (نموذج قابل للتمرير) -->
-        <div class="w-full md:w-2/3 bg-[#0d0529] xlg:pl-30 xlg:pr-5 px-2 ">
+        <div data-aos="fade-up"
+        data-aos-duration="2000" class="w-full md:w-2/3 bg-[#0d0529] xlg:pl-30 xlg:pr-5 px-2 ">
           <!-- عنوان المنتج والسعر وصورة المنتج -->
           <div
             class=" flex items-center justify-center gap-4 border border-gray-700 py-3 px-3 sm:px-0 rounded-lg mb-3"
@@ -171,22 +175,22 @@
               class="flex gap-4 bg-[var(--field)] rounded-lg overflow-hidden"
             >
             
-              <div class="flex flex-col items-center justify-center p-3">
+              <div class="flex flex-col items-center justify-center p-3 gap-1">
                 <img
                   src="https://flagcdn.com/us.svg"
                   alt="USA"
                   class="w-6 h-4"
                 />
-                <span class="text-sm">40 دولار</span>
+                <span class="text-[10px] sm:text-sm">40دولار</span>
               </div>
               <div class="w-px bg-white opacity-20"></div>
-              <div class="flex flex-col items-center justify-center p-3">
+              <div class="flex flex-col items-center justify-center p-3 gap-1">
                 <img
                   src="https://flagcdn.com/sa.svg"
                   alt="SA"
                   class="w-6 h-4"
                 />
-                <span class="text-sm">150 ريال سعودي</span>
+                <span class="text-[9px] sm:text-sm">150ريال سعودي</span>
               </div>
             </div>
             </div>
@@ -602,7 +606,8 @@
         <img src="/images/footer.png" class="w-full" alt="" />
 
         <!-- الشعار -->
-        <div class="flex flex-col items-center space-y-2">
+        <div data-aos="fade-up"
+        data-aos-duration="2000" class="flex flex-col items-center space-y-2">
           <img
             id="footer-logo"
             src="/images/logo.png"
@@ -613,6 +618,8 @@
 
         <!-- أيقونات التواصل -->
         <div
+        data-aos="fade-up"
+     data-aos-duration="2000"
           id="footer-social-icons"
           class="cursor-pointer flex items-center justify-center mt-8 flex-wrap"
         >
@@ -655,6 +662,8 @@
 
         <!-- المحتوى السفلي -->
         <div
+        data-aos="fade-up"
+     data-aos-duration="2000"
           class="flex flex-col md:flex-row justify-center items-start gap-10 mt-12 relative"
         >
           <!-- نبذة عن المتجر -->
@@ -735,8 +744,11 @@
 
       <!--................ end..................... -->
 
-      <!--JAVASCRIPT CODE-->
     </main>
+    
+    <script>
+      AOS.init();
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script src="./main.js"></script>
